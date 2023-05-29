@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import styled, { css } from "styled-components";
 import { createGlobalStyle,ThemeProvider } from "styled-components";
@@ -196,6 +195,7 @@ const Textsection = styled.div`
   font-size: 16px;
   line-height: 26px;
   height: 130px;
+  text-align: center;
 `;
 
 const Header = styled.header`
