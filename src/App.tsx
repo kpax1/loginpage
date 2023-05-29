@@ -35,7 +35,9 @@ function App() {
         <div>
           <Header>
             {" "}
-            <p>Learn to code </p> by watching others
+            
+            Learn to code by
+            <Watchingtext>watching others</Watchingtext>
           </Header>
           <Textsection>
             {" "}
@@ -205,7 +207,6 @@ const Header = styled.header`
   letter-spacing: -0.29px;
   text-align: center;
   color: white;
-  height: 80px;
   @media (min-width: 768px) {
   }
 `;
@@ -239,11 +240,9 @@ const Mainsection = styled.div`
   background-image: url(/images/bg-intro-mobile.png);
   @media (min-width: 1200px) {
     display: grid;
-    background-color: azure;
     grid-template-columns: 1fr 1fr;
-    background-color: #ff7979;
     height: 100vh;
-    background-image: url(/images/bg-intro-desktop.png);
+    background-image: url(/images/bg-intro-mobile.png);
   }
 `;
 
@@ -293,4 +292,9 @@ const Termspan = styled.span`
   font-weight: 700;
   font-size: 11px;
   line-height: 26px;
+`
+
+
+const Watchingtext = styled.div`
+  margin-bottom: 24px;
 `
